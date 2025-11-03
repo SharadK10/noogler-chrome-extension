@@ -3,7 +3,6 @@ document.getElementById('randomBtn').addEventListener('click', async () => {
       const response = await fetch(chrome.runtime.getURL('/public/holy-grail.csv'));
       const text = await response.text();
       
-      // Split lines and filter empty lines
       const lines = text.split('\n').map(line => line.trim()).filter(line => line);
   
       if (lines.length === 0) {
@@ -11,7 +10,6 @@ document.getElementById('randomBtn').addEventListener('click', async () => {
         return;
       }
   
-      // Pick a random line
       const randomLine = lines[Math.floor(Math.random() * lines.length)];
   
       // Extract question title

@@ -1,8 +1,8 @@
 {
     "manifest_version": 3,
-    "name": "The Google Extension",
+    "name": "The Noogler Extension",
     "version": "1.0",
-    "description": "Opens a random LeetCode question from a CSV",
+    "description": "Opens a random LeetCode question from tagged with Google",
     "action": {
       "default_popup": "popup.html",
       "default_icon": {
