@@ -1,18 +1,22 @@
 {
-    "manifest_version": 3,
-    "name": "The Noogler Extension",
-    "version": "1.0",
-    "description": "Opens a random LeetCode question from tagged with Google",
-    "action": {
-      "default_popup": "popup.html",
-      "default_icon": {
-        "16": "/public/google16.png",
-        "48": "/public/google48.png",
-        "128": "/public/google100.png"
-      }
-    },
-    "permissions": [
-      "storage"
-    ]
-  }
-  
+  "manifest_version": 3,
+  "name": "The Noogler Extension",
+  "version": "1.0",
+  "description": "Opens a random LeetCode question tagged with Google",
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "public/google16.png",
+      "48": "public/google48.png",
+      "128": "public/google100.png"
+    }
+  },
+  "icons": {
+    "16": "public/google16.png",
+    "48": "public/google48.png",
+    "128": "public/google100.png"
+  },
+  "permissions": [
+    "storage"
+  ]
+}
